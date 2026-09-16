@@ -1,0 +1,396 @@
+:root {
+    --ink: #17211f;
+    --muted: #64716d;
+    --paper: #f4f0e8;
+    --paper-deep: #e9e1d3;
+    --coral: #ef735d;
+    --line: rgba(23, 33, 31, 0.18);
+    --max-width: 1180px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+    line-height: 1.5;
+}
+
+::selection {
+    background: var(--coral);
+    color: var(--ink);
+}
+
+.site-header,
+.section-shell,
+.site-footer {
+    width: min(calc(100% - 64px), var(--max-width));
+    margin-inline: auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+}
+
+.brand {
+    color: var(--ink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+.brand span,
+.eyebrow,
+.section-label,
+.project-type {
+    color: var(--coral);
+}
+
+.site-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.site-nav a,
+.text-link,
+.contact-link {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.site-nav a {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.text-link:hover,
+.text-link:focus-visible,
+.contact-link:hover,
+.contact-link:focus-visible {
+    color: var(--coral);
+}
+
+.hero {
+    min-height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 88px 0 110px;
+}
+
+.eyebrow,
+.section-label,
+.project-type {
+    font-family: "DM Mono", Consolas, monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.eyebrow {
+    margin: 0 0 24px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 0.98;
+}
+
+h1 {
+    max-width: 920px;
+    margin-bottom: 56px;
+    font-size: clamp(3.6rem, 9vw, 8.2rem);
+    letter-spacing: -0.06em;
+}
+
+h1 em,
+h2 em {
+    color: var(--coral);
+    font-family: Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.07em;
+}
+
+.hero-bottom {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 840px;
+    padding-left: 16%;
+}
+
+.hero-intro {
+    max-width: 410px;
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.text-link,
+.contact-link {
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 6px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.text-link span,
+.contact-link span {
+    display: inline-block;
+    margin-left: 14px;
+    transition: transform 180ms ease;
+}
+
+.text-link:hover span,
+.text-link:focus-visible span,
+.contact-link:hover span,
+.contact-link:focus-visible span {
+    transform: translate(4px, -4px);
+}
+
+.about,
+.projects,
+.contact {
+    border-top: 1px solid var(--line);
+    padding: 88px 0 120px;
+}
+
+.about-content,
+.section-heading,
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
+    margin-top: 56px;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-size: clamp(2.8rem, 6vw, 5.8rem);
+    letter-spacing: -0.06em;
+}
+
+h2 span {
+    color: var(--muted);
+}
+
+.about-copy {
+    max-width: 440px;
+    padding-top: 8px;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.about-copy strong {
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.about-copy p + p {
+    margin-top: 24px;
+}
+
+.section-heading p {
+    align-self: end;
+    max-width: 280px;
+    margin: 0 0 5px;
+    color: var(--muted);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 16px;
+    margin-top: 72px;
+}
+
+.project-card {
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px;
+    background: var(--paper-deep);
+    transition: transform 220ms ease, background 220ms ease;
+}
+
+.project-card:hover {
+    background: #ddd3c3;
+    transform: translateY(-6px);
+}
+
+.project-card--featured {
+    background: var(--coral);
+}
+
+.project-card--featured:hover {
+    background: #f27f6a;
+}
+
+.project-number {
+    font-family: "DM Mono", Consolas, monospace;
+    font-size: 0.8rem;
+}
+
+.project-type {
+    margin-bottom: 14px;
+}
+
+.project-card h3 {
+    max-width: 360px;
+    margin-bottom: 16px;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    letter-spacing: -0.05em;
+}
+
+.project-card p:last-child {
+    max-width: 390px;
+    margin-bottom: 0;
+    color: rgba(23, 33, 31, 0.7);
+}
+
+.project-arrow {
+    position: absolute;
+    right: 28px;
+    bottom: 24px;
+    font-size: 1.6rem;
+}
+
+.contact {
+    background: var(--ink);
+    color: var(--paper);
+    width: 100%;
+    max-width: none;
+    padding-inline: max(32px, calc((100% - var(--max-width)) / 2));
+}
+
+.contact .section-label,
+.contact .eyebrow {
+    color: var(--coral);
+}
+
+.contact-content {
+    margin-top: 56px;
+}
+
+.contact-link {
+    align-self: end;
+    justify-self: start;
+    border-color: var(--paper);
+    color: var(--paper);
+    font-size: 1.05rem;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 32px;
+    color: var(--muted);
+    font-family: "DM Mono", Consolas, monospace;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .site-header,
+    .section-shell,
+    .site-footer {
+        width: min(calc(100% - 40px), var(--max-width));
+    }
+
+    .site-header {
+        padding: 22px 0;
+    }
+
+    .site-nav {
+        gap: 14px;
+    }
+
+    .site-nav a {
+        font-size: 0.75rem;
+    }
+
+    .hero {
+        min-height: 610px;
+        padding: 60px 0 80px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+        font-size: clamp(3.4rem, 17vw, 6rem);
+    }
+
+    .hero-bottom,
+    .about-content,
+    .section-heading,
+    .contact-content {
+        display: block;
+        padding-left: 0;
+    }
+
+    .text-link {
+        display: inline-block;
+        margin-top: 32px;
+    }
+
+    .about,
+    .projects,
+    .contact {
+        padding-top: 64px;
+        padding-bottom: 80px;
+    }
+
+    .about-content,
+    .section-heading,
+    .contact-content {
+        margin-top: 40px;
+    }
+
+    .about-copy,
+    .section-heading p {
+        margin-top: 32px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        margin-top: 48px;
+    }
+
+    .project-card {
+        min-height: 280px;
+    }
+
+    .contact-link {
+        display: inline-block;
+        margin-top: 40px;
+    }
+
+    .site-footer {
+        gap: 16px;
+        flex-direction: column;
+    }
+}
