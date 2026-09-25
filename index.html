@@ -1,16 +1,131 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>
-        KRC
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karun Raya Chhetri - Portfolio</title>
 </head>
 <body>
-    <h1> Hello Everyone </h1>
-    <h2> Home </h2>
-    <h3> Contact</h3>
-    <h4> <Address> Manamaiju </Address> </h4>
-    <h1>About Me </h1>
-    <p> <b>Karun Raya Chhetri</b> <i>Student of BIT, Learning Web Development. This is my initial Website showing my bio.</i><u>Thank you.</u> </p>
+
+    <header>
+        <img src="images/logo.jpeg" alt="KRC IT Solutions and Services logo" width="120">
+        <h1>Karun Raya Chhetri</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/profile.jpeg" alt="Portrait of Karun Raya Chhetri" width="250">
+            <p>Hello everyone. My name is Karun Raya Chhetri.</p>
+            <p>I am a second-year Bachelor of Information Technology (BIT) student from Nepal. My interests include cloud computing, software development, and artificial intelligence. As part of this journey, I am exploring new ideas, communication, teamwork, and the constantly evolving world of technology.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <dl>
+                <dt>Programming Languages</dt>
+                <dd>Java, Python, C++, JavaScript</dd>
+
+                <dt>Databases</dt>
+                <dd>MySQL, Oracle, MongoDB, PostgreSQL</dd>
+
+                <dt>Frameworks</dt>
+                <dd>Spring Boot, Angular, .NET, Django</dd>
+
+                <dt>Tools</dt>
+                <dd>VS Code, MS Word, PowerPoint, Excel</dd>
+            </dl>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>School Management</h3>
+                <p>A planned system for organizing school information, users, and day-to-day academic administration in one place.</p>
+            </article>
+            <article>
+                <h3>Inventory Management</h3>
+                <p>A planned inventory tool for tracking products, quantities, and updates with a clearer, more reliable workflow.</p>
+            </article>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.N.</th>
+                        <th>Level</th>
+                        <th>Institution</th>
+                        <th>GPA</th>
+                        <th>Grade</th>
+                        <th>Completion Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Secondary</td>
+                        <td>LA</td>
+                        <td>3.7</td>
+                        <td>B+</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>High Secondary</td>
+                        <td>LA</td>
+                        <td>3.9</td>
+                        <td>A+</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bachelor</td>
+                        <td>Washington DC</td>
+                        <td>3.8</td>
+                        <td>A</td>
+                        <td>Ongoing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Tell me a little about what you are working on and I will get back to you.</p>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KRC IT Solutions and Services. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
