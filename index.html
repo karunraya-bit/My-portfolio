@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRC</title>
+    <title>KRC Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <header>
-        <img src="images/logo.jpeg" alt="KRC IT Solutions and Services logo" width="100">
+    <header class="site-header">
+        <img src="images/logo.jpeg" alt="KRC IT Solutions and Services logo">
+
         <h1>KRC Portfolio</h1>
-        <nav>
+
+        <nav class="site-nav">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -21,108 +25,156 @@
         </nav>
     </header>
 
-    <main>
-        <section id="about">
+    <main class="main-content">
+
+        <section id="about" class="about-section">
             <h2>About Me</h2>
-            <img src="images/profile.jpeg" alt="Portrait of Karun Raya Chhetri" width="180">
-            <p> <b> Hello everyone. </b> <i> My name is Karun Raya Chhetri.</i><br>I am a second-year Bachelor of Information Technology (BIT) student from Nepal. My interests include cloud computing, software development, and artificial intelligence. As part of this journey, I am exploring new ideas, communication, teamwork, and the constantly evolving world of technology.</p>
+
+            <img src="images/profile.jpeg" alt="Portrait of Karun Raya Chhetri">
+
+            <p>
+                <strong>Hello everyone.</strong>
+                <em>My name is Karun Raya Chhetri.</em><br>
+                I am a second-year Bachelor of Information Technology (BIT) student from Nepal.
+                My interests include cloud computing, software development, and artificial intelligence.
+                As part of this journey, I am exploring new ideas, communication, teamwork, and the constantly evolving world of technology.
+            </p>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="skills-section">
             <h2>Technical Skills</h2>
+
             <dl>
                 <dt>Programming Languages</dt>
-                <dd><i>Java, Python, C++, JavaScript </i></dd>
+                <dd><em>Java, Python, C++, JavaScript</em></dd>
 
                 <dt>Databases</dt>
-                <dd><i>MySQL, MongoDB</i></dd>
+                <dd><em>MySQL, MongoDB</em></dd>
 
                 <dt>Web Technologies</dt>
-                <dd><i>HTMl5, Javascript, CSS</i></dd>
+                <dd><em>HTML5, JavaScript, CSS</em></dd>
 
                 <dt>Tools</dt>
-                <dd><i>VS Code, Git, GitHub</i></dd>
+                <dd><em>VS Code, Git, GitHub</em></dd>
             </dl>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="projects-section">
             <h2>Projects</h2>
-            <article>
+
+            <article class="project-card">
                 <h3>School Management</h3>
-                <p>Developed to optimize administrative workflows and digitize institutional operations. The application automates critical academic processes, including student enrollment, attendance monitoring, grade management, and faculty scheduling. Utilizing role-based access control, the system ensures data security and integrity by restricting information access according to user permissions (administrators, educators, students, and parents). This project eliminates administrative redundancies and provides leadership with data-driven insights through automated institutional reporting.</p>
+
+                <p>
+                    Developed to optimize administrative workflows and digitize institutional operations.
+                    The application automates critical academic processes, including student enrollment,
+                    attendance monitoring, grade management, and faculty scheduling.
+                    Utilizing role-based access control, the system ensures data security and integrity
+                    by restricting information access according to user permissions (administrators,
+                    educators, students, and parents). This project eliminates administrative redundancies
+                    and provides leadership with data-driven insights through automated institutional reporting.
+                </p>
+
+                <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Click here</a>
             </article>
-            <article>
+
+            <article class="project-card">
                 <h3>Inventory Management</h3>
-                <p> Built a comprehensive system to  to systematically track organizational assets and streamline resource allocation. The platform monitors the entire lifecycle of physical equipment and consumables through a digital check-in/check-out registry that establishes clear accountability. By integrating automated threshold notifications, the system proactively alerts administrators to low stock levels to prevent supply chain disruptions. The solution minimizes manual audit discrepancies, reduces asset loss, and generates analytical reports on resource utilization.</p>
+
+                <p>
+                    Built a comprehensive system to systematically track organizational assets and streamline
+                    resource allocation. The platform monitors the entire lifecycle of physical equipment
+                    and consumables through a digital check-in/check-out registry that establishes clear
+                    accountability. By integrating automated threshold notifications, the system proactively
+                    alerts administrators to low stock levels to prevent supply chain disruptions.
+                    The solution minimizes manual audit discrepancies, reduces asset loss, and generates
+                    analytical reports on resource utilization.
+                </p>
+
+                <a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Click here</a>
             </article>
         </section>
 
-        <section id="education">
+        <section id="education" class="education-section">
             <h2>Education</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>S.N.</th>
-                        <th>Level</th>
-                        <th>Institution</th>
-                        <th>GPA</th>
-                        <th>Grade</th>
-                        <th>Completion Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Secondary</td>
-                        <td>Green Valley Secondary School</td>
-                        <td>3.55</td>
-                        <td>B+</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>High Secondary</td>
-                        <td>Everest Higher Secondary College</td>
-                        <td>3.62</td>
-                        <td>B+</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Bachelor</td>
-                        <td>Model Institute of Technology</td>
-                        <td>Ongoing</td>
-                        <td>Ongoing</td>
-                        <td>Present</td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.N.</th>
+                            <th>Level</th>
+                            <th>Institution</th>
+                            <th>GPA</th>
+                            <th>Grade</th>
+                            <th>Completion Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Secondary</td>
+                            <td>Green Valley Secondary School</td>
+                            <td>3.55</td>
+                            <td>B+</td>
+                            <td>2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>High Secondary</td>
+                            <td>Everest Higher Secondary College</td>
+                            <td>3.62</td>
+                            <td>B+</td>
+                            <td>2024</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Bachelor</td>
+                            <td>Model Institute of Technology</td>
+                            <td>Ongoing</td>
+                            <td>Ongoing</td>
+                            <td>Present</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact-section">
             <h2>Contact Me</h2>
-            <p>Tell me a little about what you are working on and I will get back to you.</p>
-            <form action="#" method="post">
+
+            <p>
+                Tell me a little about what you are working on and I will get back to you.
+            </p>
+
+            <form action="#" method="post" class="contact-form">
                 <p>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </p>
+
                 <p>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </p>
+
                 <p>
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </p>
+
                 <p>
                     <button type="submit">Submit</button>
                 </p>
             </form>
         </section>
+
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 KRC IT Solutions and Services. All rights reserved.</p>
     </footer>
 
