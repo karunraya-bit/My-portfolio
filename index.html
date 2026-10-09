@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRC Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="slider.js" defer></script>
 </head>
 
 <body>
@@ -39,6 +40,41 @@
                 My interests include cloud computing, software development, and artificial intelligence.
                 As part of this journey, I am exploring new ideas, communication, teamwork, and the constantly evolving world of technology.
             </p>
+        </section>
+
+        <section class="image-slider-section" aria-labelledby="image-slider-heading">
+            <h2 id="image-slider-heading">Gallery</h2>
+
+            <div class="image-slider" data-slider>
+                <div class="slider-viewport">
+                    <div class="slider-track">
+                        <div class="slider-slide">
+                            <img src="images/imageOne.jpg" alt="Gallery image 1">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="images/imageTwo.jpg" alt="Gallery image 2">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="images/imageThree.jpg" alt="Gallery image 3">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="images/imageFour.jpg" alt="Gallery image 4">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="images/imageFive.jpg" alt="Gallery image 5">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="images/imageSix.jpg" alt="Gallery image 6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-button slider-previous" type="button" aria-label="Previous slide">Previous</button>
+                    <div class="slider-dots" aria-label="Choose a slide"></div>
+                    <button class="slider-button slider-next" type="button" aria-label="Next slide">Next</button>
+                </div>
+            </div>
         </section>
 
         <section id="skills" class="skills-section">
